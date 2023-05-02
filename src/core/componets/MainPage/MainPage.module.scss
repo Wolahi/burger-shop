@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@mixin textMix {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  background-color: inherit;
+}
+
+.root {
+  overflow: hidden;
+}
+.header {
+  position: relative;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top:-30vw;
+  width: 120vw;
+  right: 10vw;
+  height: 60vw;
+  background-color: #FFAB08;
+  border-radius: 0 0 100% 100%;
+
+  .logo {
+    margin-top: calc(30vw + 21.85px);
+    background-color: inherit;
+  }
+
+  .burgerBlock {
+    display: flex;
+    background-color: inherit;
+
+    .burger {
+      width: 326px;
+      height: auto;
+        background-color: inherit;
+    }
+
+    .text {
+      margin-top: 50px ;
+      @include textMix;
+      color: #FFFFFF;
+
+    }
+
+    .textOrange {
+      @include textMix;
+      color: #FF5C00;
+    }
+
+  }
+}
+
