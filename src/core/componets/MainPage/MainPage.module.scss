@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  top:-30vw;
+  top:-33vw;
   width: 120vw;
   right: 10vw;
   height: 60vw;
@@ -24,7 +24,7 @@
   border-radius: 0 0 100% 100%;
 
   .logo {
-    margin-top: calc(30vw + 21.85px);
+    margin-top: calc(33vw + 21.85px);
     background-color: inherit;
   }
 
@@ -48,6 +48,17 @@
     .textOrange {
       @include textMix;
       color: #FF5C00;
+    }
+
+    .textFooter
+    {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21.82px;
+      margin-top: 52px;
+      background-color: inherit;
+      color: #FFFFFF;
     }
 
   }

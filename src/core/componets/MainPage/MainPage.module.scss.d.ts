@@ -8,6 +8,7 @@ interface CssExports {
   burger: string;
   text: string;
   textOrange: string;
+  textFooter: string;
 }
 export const cssExports: CssExports;
 export default cssExports;
