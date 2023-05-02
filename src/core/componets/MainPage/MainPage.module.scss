@@ -1,66 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
 @mixin textMix {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 60px;
-  background-color: inherit;
 }
 
 .root {
   overflow: hidden;
 }
+
 .header {
   position: relative;
   overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top:-33vw;
+  top: -33vw;
   width: 120vw;
   right: 10vw;
   height: 60vw;
-  background-color: #FFAB08;
+  background-color: #ffab08;
   border-radius: 0 0 100% 100%;
 
   .logo {
     margin-top: calc(33vw + 21.85px);
-    background-color: inherit;
   }
 
   .burgerBlock {
     display: flex;
-    background-color: inherit;
 
     .burger {
       width: 326px;
       height: auto;
-        background-color: inherit;
     }
 
     .text {
-      margin-top: 50px ;
+      margin-top: 50px;
       @include textMix;
-      color: #FFFFFF;
-
+      color: #ffffff;
     }
 
     .textOrange {
       @include textMix;
-      color: #FF5C00;
+      color: #ff5c00;
     }
 
-    .textFooter
-    {
-      font-family: 'Nunito', sans-serif;
+    .textFooter {
+      font-family: "Nunito", sans-serif;
       font-weight: 600;
       font-size: 16px;
       line-height: 21.82px;
       margin-top: 52px;
-      background-color: inherit;
-      color: #FFFFFF;
+      color: #ffffff;
     }
-
   }
 }
 
+.footer {
+  padding-left: 75px;
+  padding-top: 46.7px;
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  position: relative;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 244px;
+}
+
+.logoFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 80%;
+
+  .logoText {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16.37px;
+    font-style: normal;
+    color: #000;
+  }
+}
+
+.footerBlocks {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.number {
+  margin-top: 25.5px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  font-style: normal;
+  color: #000;
+}
+
+.textFooterBold {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+  color: #000;
+}
+
+.links {
+  margin-top: 25.5px;
+  a {
+    margin-right: 16px;
+  }
+}

@@ -9,6 +9,13 @@ interface CssExports {
   text: string;
   textOrange: string;
   textFooter: string;
+  footer: string;
+  logoFooter: string;
+  footerBlocks: string;
+  logoText: string;
+  links: string;
+  textFooterBold: string;
+  number: string;
 }
 export const cssExports: CssExports;
 export default cssExports;
