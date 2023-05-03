@@ -63,6 +63,7 @@
 .footer {
   padding-left: 75px;
   padding-top: 46.7px;
+  margin-top: 200px;
   display: grid;
   grid-template-columns: 40% 30% 30%;
   position: relative;
@@ -129,6 +130,7 @@
 
 .basket {
   display: grid;
+  grid-template-rows: 15% auto 30%;
   width: 80%;
   height: 80%;
   background-color: #ffffff;
@@ -201,6 +203,10 @@
       opacity: 0.7;
       cursor: pointer;
     }
+    &:active {
+      opacity: 0.9;
+      transform: scale(0.9);
+    }
   }
   .delivery {
     display: flex;
@@ -212,5 +218,87 @@
     font-size: 12px;
     margin-top: 6px;
     margin-left: 8px;
+  }
+}
+.order {
+  width: 90%;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+}
+.basketCard {
+  height: 84px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 25% auto 40%;
+  border-top: 1px solid #f2f2f3;
+  border-bottom: 1px solid #f2f2f3;
+
+  .burgIcon {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+
+  .descriptionCard {
+    align-self: center;
+    margin-left: 6px;
+
+    .name {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .weight {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #b1b1b1;
+    }
+
+    .cost {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 15px;
+    }
+  }
+
+  .buttonCard {
+    display: flex;
+    justify-self: end;
+    align-self: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    width: 84px;
+    background-color: #f2f2f3;
+    border-radius: 12px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    .plus:hover,
+    .minus:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+
+    .plus:active,
+    .minus:active {
+      cursor: pointer;
+      transform: scale(0.9);
+      opacity: 0.9;
+    }
   }
 }
