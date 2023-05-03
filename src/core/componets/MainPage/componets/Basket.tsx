@@ -1,16 +1,8 @@
 import styles from "../MainPage.module.scss";
 import Bike from "../../../../assets/MainPage/icons/delivery.svg";
 import BasketCard from "./BasketCard";
-import { StaticImageData } from "next/image";
 import CheeseBurg from "../../../../assets/MainPage/imgs/CheeseBurg.png";
-
-export interface BasketCart {
-  icon: StaticImageData;
-  name: string;
-  weight: string;
-  cost: Number;
-  count: Number;
-}
+import { BasketCart } from "../utils/shemas";
 
 const obj: BasketCart = {
   icon: CheeseBurg,

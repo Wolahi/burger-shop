@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
 @mixin textMix {
   font-family: "Nunito", sans-serif;
   font-weight: 800;
@@ -9,7 +9,7 @@
 .root {
   overflow: hidden;
   display: grid;
-  grid-template-rows: 1fr 1fr auto;
+  grid-template-rows: auto 1fr auto;
   height: auto;
 }
 
@@ -24,7 +24,7 @@
   height: 400px;
   background-color: #ffab08;
   border-radius: 0px 0px 100% 100%;
-  margin-bottom: 130px;
+  margin-bottom: 75px;
 
   .logo {
     margin-top: 21.85px;
@@ -129,6 +129,7 @@
 }
 
 .basket {
+  margin-top: 72px;
   display: grid;
   grid-template-rows: 15% auto 30%;
   width: 80%;
@@ -238,6 +239,7 @@
     width: 100%;
     height: auto;
     align-self: center;
+    border-radius: 8px;
   }
 
   .descriptionCard {
@@ -299,6 +301,86 @@
       cursor: pointer;
       transform: scale(0.9);
       opacity: 0.9;
+    }
+  }
+}
+
+.burgShopHeader {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+}
+.burgersList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin-top: 30px;
+  display: grid;
+  justify-items: center;
+  margin-right: 30px;
+  grid-template-rows: 55% auto auto;
+  width: 300px;
+  height: 50%;
+  min-height: 411px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  .cardIcon {
+    margin-top: 12px;
+    width: 90%;
+    height: auto;
+  }
+
+  .disCard {
+    width: 90%;
+    margin-top: 16px;
+    .cardCost {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 100%;
+    }
+
+    .nameCard {
+      margin-top: 8px;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+
+  .butAdd {
+    width: 90%;
+
+    .weightCard {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 130%;
+      color: #b1b1b1;
+    }
+
+    .butAddBurg {
+      width: 100%;
+      height: 40px;
+      background-color: #f2f2f3;
+      border-radius: 12px;
+      border: 0;
+
+      &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      &:active {
+        opacity: 0.9;
+        transform: scale(0.9);
+      }
     }
   }
 }

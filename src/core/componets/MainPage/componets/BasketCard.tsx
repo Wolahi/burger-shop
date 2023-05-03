@@ -1,7 +1,5 @@
 import styles from "../MainPage.module.scss";
-import CheeseBurg from "../../../../assets/MainPage/imgs/CheeseBurg.png";
 import Image from "next/image";
-import { BasketCart } from "./Basket";
 
 const BasketCard = (props: any): JSX.Element => {
   const obj = props.card;

@@ -2,6 +2,7 @@ import Header from "@/core/componets/MainPage/componets/Header";
 import styles from "./MainPage.module.scss";
 import Footer from "./componets/Footer";
 import Basket from "./componets/Basket";
+import BurgerShop from "./componets/BurgersShop";
 
 const MainPageView = (): JSX.Element => {
   return (
@@ -9,7 +10,7 @@ const MainPageView = (): JSX.Element => {
       <Header />
       <div className={styles.mainBlock}>
         <Basket />
-        <div>БУРГЕРЫ</div>
+        <BurgerShop />
       </div>
       <Footer />
     </div>
