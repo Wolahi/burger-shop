@@ -8,6 +8,9 @@
 
 .root {
   overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+  height: auto;
 }
 
 .header {
@@ -16,15 +19,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: -33vw;
-  width: 120vw;
-  right: 10vw;
-  height: 60vw;
+  width: 120%;
+  right: 10%;
+  height: 400px;
   background-color: #ffab08;
-  border-radius: 0 0 100% 100%;
+  border-radius: 0px 0px 100% 100%;
+  margin-bottom: 130px;
 
   .logo {
-    margin-top: calc(33vw + 21.85px);
+    margin-top: 21.85px;
   }
 
   .burgerBlock {
@@ -66,7 +69,7 @@
   bottom: 0;
   background-color: #ffffff;
   width: 100%;
-  height: 244px;
+  min-height: 244px;
 }
 
 .logoFooter {
@@ -114,5 +117,100 @@
   margin-top: 25.5px;
   a {
     margin-right: 16px;
+  }
+}
+
+.mainBlock {
+  display: grid;
+  width: 95%;
+  grid-template-columns: 30% auto;
+  margin: 0 auto;
+}
+
+.basket {
+  display: grid;
+  width: 80%;
+  height: 80%;
+  background-color: #ffffff;
+  border-radius: 18px;
+}
+
+.basketHeader {
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  width: 90%;
+  margin-top: 24px;
+
+  .textHeader {
+    font-family: "Ninito", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .count {
+    width: 41px;
+    height: 20px;
+    background-color: #f2f2f3;
+    border-radius: 6px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.buyBlock {
+  display: grid;
+  grid-template-rows: 20% 40px 20%;
+  width: 90%;
+  justify-self: center;
+  align-content: space-evenly;
+
+  .buyHead {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+
+    .buyText {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  .buyButton {
+    background-color: #ff7020;
+    height: 40px;
+    border-radius: 12px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #ffffff;
+    border: 0;
+
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+  .delivery {
+    display: flex;
+  }
+  .deliveryText {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 6px;
+    margin-left: 8px;
   }
 }
