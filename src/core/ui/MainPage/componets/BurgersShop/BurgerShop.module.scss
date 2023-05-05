@@ -1,0 +1,12 @@
+@import "../../../../../style/variables.scss";
+.burgShopHeader {
+  font-family: $font-nintino;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+}
+.burgersList {
+  display: flex;
+  flex-wrap: wrap;
+}

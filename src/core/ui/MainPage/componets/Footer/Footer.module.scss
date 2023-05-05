@@ -1,0 +1,61 @@
+@import "../../../../../style/variables.scss";
+.root {
+  padding-left: 75px;
+  padding-top: 46.7px;
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  position: relative;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 244px;
+}
+
+.logoFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 80%;
+
+  .logoText {
+    font-family: $font-nintino;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16.37px;
+    font-style: normal;
+    color: #000;
+  }
+}
+
+.footerBlocks {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.number {
+  margin-top: 25.5px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  font-style: normal;
+  color: #000;
+}
+
+.textFooterBold {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+  color: #000;
+}
+
+.links {
+  margin-top: 25.5px;
+  a {
+    margin-right: 16px;
+  }
+}

@@ -1,4 +1,4 @@
-import MainPageView from "../core/componets/MainPage/MainPageView";
+import MainPageView from "../core/ui/MainPage/MainPageView";
 
 const Index = (): JSX.Element => {
   return <MainPageView />;

@@ -1,12 +1,12 @@
-import styles from "../MainPage.module.scss";
-import FooterLogo from "../../../../assets/MainPage/icons/footer_logo.svg";
-import Phone from "../../../../assets/MainPage/icons/phone.svg";
-import VK from "../../../../assets/MainPage/icons/vk.svg";
-import TG from "../../../../assets/MainPage/icons/tg.svg";
+import styles from "./Footer.module.scss";
+import FooterLogo from "../../../../../../public/assets/MainPage/icons/footer_logo.svg";
+import Phone from "../../../../../../public/assets/MainPage/icons/phone.svg";
+import VK from "../../../../../../public/assets/MainPage/icons/vk.svg";
+import TG from "../../../../../../public/assets/MainPage/icons/tg.svg";
 
 const Footer = (): JSX.Element => {
   return (
-    <div className={styles.footer}>
+    <div className={styles.root}>
       <div className={styles.logoFooter}>
         <FooterLogo />
         <div className={styles.logoText}>© YouMeal, 2023</div>

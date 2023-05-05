@@ -1,0 +1,14 @@
+@import "../../../style/variables.scss";
+.root {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: auto;
+}
+
+.mainBlock {
+  display: grid;
+  width: 95%;
+  grid-template-columns: 30% auto;
+  margin: 0 auto;
+}

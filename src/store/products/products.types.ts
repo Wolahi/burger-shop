@@ -1,9 +1,10 @@
 import { StaticImageData } from "next/image";
 
 export interface BasketCart {
+  id: number;
   icon: StaticImageData;
   name: string;
   weight: string;
-  cost: Number;
-  count: Number;
+  cost: number;
+  count: number;
 }

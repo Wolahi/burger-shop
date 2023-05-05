@@ -1,0 +1,78 @@
+@import "../../../style/variables.scss";
+.root {
+  height: 84px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 25% auto 40%;
+  border-top: 1px solid #f2f2f3;
+  border-bottom: 1px solid #f2f2f3;
+
+  .burgIcon {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    border-radius: 8px;
+  }
+
+  .descriptionCard {
+    align-self: center;
+    margin-left: 6px;
+
+    .name {
+      font-family: $font-nintino;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .weight {
+      font-family: $font-nintino;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #b1b1b1;
+    }
+
+    .cost {
+      font-family: $font-nintino;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 15px;
+    }
+  }
+
+  .buttonCard {
+    display: flex;
+    justify-self: end;
+    align-self: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    width: 84px;
+    background-color: #f2f2f3;
+    border-radius: 12px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    .plus:hover,
+    .minus:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+
+    .plus:active,
+    .minus:active {
+      cursor: pointer;
+      transform: scale(0.9);
+      opacity: 0.9;
+    }
+  }
+}

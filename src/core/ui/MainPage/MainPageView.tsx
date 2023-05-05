@@ -1,8 +1,8 @@
-import Header from "@/core/componets/MainPage/componets/Header";
+import Header from "./componets/Header/Header";
 import styles from "./MainPage.module.scss";
-import Footer from "./componets/Footer";
-import Basket from "./componets/Basket";
-import BurgerShop from "./componets/BurgersShop";
+import Footer from "./componets/Footer/Footer";
+import Basket from "./componets/Basket/Basket";
+import BurgerShop from "./componets/BurgersShop/BurgersShop";
 
 const MainPageView = (): JSX.Element => {
   return (

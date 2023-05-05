@@ -1,0 +1,47 @@
+@import "../../../../../style/variables.scss";
+.root {
+  position: relative;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120%;
+  right: 10%;
+  height: 400px;
+  background-color: #ffab08;
+  border-radius: 0px 0px 100% 100%;
+  margin-bottom: 75px;
+
+  .logo {
+    margin-top: 21.85px;
+  }
+
+  .burgerBlock {
+    display: flex;
+
+    .burger {
+      width: 326px;
+      height: auto;
+    }
+
+    .text {
+      margin-top: 50px;
+      @include textMix;
+      color: #ffffff;
+    }
+
+    .textOrange {
+      @include textMix;
+      color: #ff5c00;
+    }
+
+    .textFooter {
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21.82px;
+      margin-top: 52px;
+      color: #ffffff;
+    }
+  }
+}

@@ -1,30 +1,30 @@
-import styles from "../MainPage.module.scss";
-import Bike from "../../../../assets/MainPage/icons/delivery.svg";
-import BasketCard from "./BasketCard";
-import CheeseBurg from "../../../../assets/MainPage/imgs/CheeseBurg.png";
-import { BasketCart } from "../utils/shemas";
+import styles from "./Basket.module.scss";
+import Bike from "../../../../../../public/assets/MainPage/icons/delivery.svg";
+import BasketCard from "../../../../../shared/ui/BasketCard/BasketCard";
+import { useTypedSelector } from "@/shared/hooks/useTypedSelector";
 
-const obj: BasketCart = {
-  icon: CheeseBurg,
-  name: "Супер сырный",
-  weight: "512",
-  cost: 550,
-  count: 1,
-};
 const Basket = (): JSX.Element => {
+  const { basket } = useTypedSelector((state) => state);
+  const totalCost = () => {
+    let count = 0;
+    basket.map((p) => (count += p.cost * p.count));
+    return count;
+  };
   return (
-    <div className={styles.basket}>
+    <div className={styles.root}>
       <div className={styles.basketHeader}>
         <span className={styles.textHeader}>Корзина</span>
-        <div className={styles.count}>0</div>
+        <div className={styles.count}>{basket.length}</div>
       </div>
       <div className={styles.order}>
-        <BasketCard card={obj} />
+        {basket.map((p) => (
+          <BasketCard card={p} />
+        ))}
       </div>
       <div className={styles.buyBlock}>
         <div className={styles.buyHead}>
           <div className={styles.buyText}>Итого</div>
-          <div className={styles.buyText}>0₽</div>
+          <div className={styles.buyText}>{totalCost()}₽</div>
         </div>
         <button type="button" className={styles.buyButton}>
           Оформить заказ

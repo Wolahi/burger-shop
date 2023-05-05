@@ -1,10 +1,10 @@
-import styles from "../MainPage.module.scss";
-import Logo from "../../../../assets/MainPage/icons/logo.svg";
-import Burger from "../../../../assets/MainPage/icons/burger.svg";
+import styles from "./Header.module.scss";
+import Logo from "../../../../../../public/assets/MainPage/icons/logo.svg";
+import Burger from "../../../../../../public/assets/MainPage/icons/burger.svg";
 
 const Header = (): JSX.Element => {
   return (
-    <div className={styles.header}>
+    <div className={styles.root}>
       <Logo className={styles.logo} />
       <div className={styles.burgerBlock}>
         <Burger className={styles.burger} />

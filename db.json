@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "icon": "/assets/MainPage/imgs/CheeseBurg.png",
+      "name": "Супер сырный",
+      "weight": "512",
+      "cost": 550,
+      "count": 1
+    },
+    {
+      "id": 2,
+      "icon": "/assets/MainPage/imgs/MeatBomb.png",
+      "name": "Мясная бомба",
+      "weight": "520",
+      "cost": 689,
+      "count": 1
+    },
+    {
+      "id": 3,
+      "icon": "/assets/MainPage/imgs/Heavy.png",
+      "name": "Сытный",
+      "weight": "580",
+      "cost": 639,
+      "count": 1
+    },
+    {
+      "id": 4,
+      "icon": "/assets/MainPage/imgs/HeavyPunch.png",
+      "name": "Тяжелый удар",
+      "weight": "470",
+      "cost": 480,
+      "count": 1
+    },
+    {
+      "id": 5,
+      "icon": "/assets/MainPage/imgs/Classick.png",
+      "name": "Вечная классика",
+      "weight": "450",
+      "cost": 450,
+      "count": 1
+    },
+    {
+      "id": 6,
+      "icon": "/assets/MainPage/imgs/Italio.png",
+      "name": "Итальянский",
+      "weight": "510",
+      "cost": 560,
+      "count": 1
+    }
+  ]
+}
