@@ -27,6 +27,10 @@ export const basketSlice = createSlice({
         return state.filter((p) => p.id !== actions.payload.id);
       }
     },
+    deleteAll: (state) => {
+      state = initialState;
+      return state;
+    },
   },
 });
 

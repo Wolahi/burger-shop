@@ -35,6 +35,21 @@
     font-size: 12px;
     line-height: 20px;
   }
+
+  .deleteAll {
+    margin-top: 10px;
+    margin-left: 20px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+  }
 }
 
 .buyBlock {

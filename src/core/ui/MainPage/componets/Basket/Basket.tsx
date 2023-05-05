@@ -2,6 +2,8 @@ import styles from "./Basket.module.scss";
 import Bike from "../../../../../../public/assets/MainPage/icons/delivery.svg";
 import BasketCard from "../../../../../shared/ui/BasketCard/BasketCard";
 import { useTypedSelector } from "@/shared/hooks/useTypedSelector";
+import { RiDeleteBinLine } from "react-icons/ri";
+import { useActions } from "@/shared/hooks/useActions";
 
 const Basket = (): JSX.Element => {
   const { basket } = useTypedSelector((state) => state);
@@ -10,15 +12,25 @@ const Basket = (): JSX.Element => {
     basket.map((p) => (count += p.cost * p.count));
     return count;
   };
+  const { deleteAll } = useActions();
   return (
     <div className={styles.root}>
       <div className={styles.basketHeader}>
         <span className={styles.textHeader}>Корзина</span>
-        <div className={styles.count}>{basket.length}</div>
+        <div className={styles.countBlock}>
+          <div className={styles.count}>{basket.length}</div>
+          <div
+            className={styles.deleteAll}
+            onClick={() => {
+              deleteAll();
+            }}>
+            <RiDeleteBinLine />
+          </div>
+        </div>
       </div>
       <div className={styles.order}>
         {basket.map((p) => (
-          <BasketCard card={p} />
+          <BasketCard card={p} id={p.id} />
         ))}
       </div>
       <div className={styles.buyBlock}>
